@@ -156,6 +156,15 @@ function KeepClicking(){
     }
 setInterval(KeepClicking,60000)
                 </code></pre>
+
+                <h2 class="major">Fixing the My\ Drive problem</h2>
+                Fixes the problem of the "My Drive" path issues when mounting Google Drive.
+                <pre><code>
+!mkdir MyDrive
+!mount --bind /content/drive/My\ Drive /content/MyDrive
+%cd /content/MyDrive
+                </code></pre>
+
                 <!-- Arduino, some notebooks, webpage -->
 
             </article>
